@@ -7,7 +7,7 @@ namespace OOP3
     class BasvuruManager
     {
         //Method injection
-        public void BasvuruYap(IKrediManager krediManager, List<ILoggerService> loggerServices) 
+        public void BasvuruYap(IKrediManager krediManager, List<ILoggerService> loggerServices)
         {
             //Başvuran bilgilerini değerlendirme
 
@@ -18,9 +18,9 @@ namespace OOP3
             }
         }
 
-        public void KrediOnBilgilendirmesiYap(List<IKrediManager> krediler) 
+        public void KrediOnBilgilendirmesiYap(List<IKrediManager> krediler)
         {
-            foreach (var kredi in krediler) 
+            foreach (var kredi in krediler)
             {
                 kredi.Hesapla();
             }
