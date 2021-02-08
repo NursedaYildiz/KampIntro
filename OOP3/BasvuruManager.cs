@@ -20,7 +20,7 @@ namespace OOP3
 
         public void KrediOnBilgilendirmesiYap(List<IKrediManager> krediler) 
         {
-            foreach (var kredi in krediler)
+            foreach (var kredi in krediler) 
             {
                 kredi.Hesapla();
             }
